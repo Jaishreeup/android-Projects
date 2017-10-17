@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/numlayout">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:id="@+id/onOff">
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/status"
+            android:id="@+id/switch1"
+            android:checked="false"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/options"
+        android:weightSum="1">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="enter number"
+            android:id="@+id/button"
+            android:layout_weight="1"
+            android:background="#ffff393d"
+            android:padding="10dp"
+            android:onClick="changeAgain" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="choose from contacts"
+            android:id="@+id/button2"
+            android:layout_weight="2"
+            android:onClick="changeLayout"
+            android:background="#ff50dbff"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enter"
+        android:weightSum="1"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/line"
+            android:textSize="15sp"
+            android:paddingTop="20dp"
+            android:editable="false"
+            android:hint="enter a number"
+            android:phoneNumber="true"
+            android:visibility="visible"
+            android:maxWidth="280dp"
+            android:minWidth="275dp"
+            android:maxHeight="50dp"
+            android:minHeight="55dp"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/contacts"
+            android:paddingLeft="10dp"
+            android:paddingTop="25dp"
+            android:cropToPadding="false"
+            android:clickable="true"
+            android:src="@drawable/contacts"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/image"
+            android:layout_marginTop="5dp"
+            android:onClick="pickContacts"
+            android:layout_gravity="right"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout1"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:textSize="15sp"
+            android:editable="true"
+            android:hint="enter the name"
+            android:visibility="visible"
+            android:maxWidth="280dp"
+            android:minWidth="275dp"
+            android:maxHeight="50dp"
+            android:minHeight="55dp"
+            android:paddingTop="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:paddingTop="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Block"
+            android:id="@+id/block"
+            android:paddingLeft="15dp"
+            android:paddingTop="20dp"
+            android:layout_gravity="center_vertical"
+            android:onClick="block" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

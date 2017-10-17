@@ -1,0 +1,55 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="ScrollViewSize" >
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:text="Notifications"
+            android:onClick="changescreen" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button1"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="50dp"
+            android:text="Set Preferences" 
+            android:onClick="changescreen"/>
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_below="@+id/button2"
+            android:layout_marginTop="50dp"
+            android:text="About Application" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button3"
+            android:layout_below="@+id/button3"
+            android:layout_marginTop="50dp"
+            android:text="About Developers" />
+    </RelativeLayout>
+
+</ScrollView><!-- From: file:/C:/Users/JAISHREE%20UPRETI/AndroidStudioProjects/Notifier1/app/src/main/res/layout/activity_main_screen.xml -->

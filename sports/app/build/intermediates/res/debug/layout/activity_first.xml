@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.example.sports.First" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="#00FFFF"
+        android:text="Create Group"
+        android:layout_marginLeft="20dp" />
+    
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Join Group" 
+        android:background="#736F6E"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+    
+
+</LinearLayout>
+<!-- From: file:/C:/Users/JAISHREE%20UPRETI/AndroidStudioProjects/sports/app/src/main/res/layout/activity_first.xml -->

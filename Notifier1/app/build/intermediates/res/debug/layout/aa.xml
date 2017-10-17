@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle" android:layout_height="match_parent"
+        android:layout_width="wrap_content">
+        <solid android:color="@color/child_separator_color"/>
+        <size android:height="1dp"/>
+    </shape>
+</LinearLayout>
+<!-- From: file:/C:/Users/JAISHREE%20UPRETI/AndroidStudioProjects/Notifier1/app/src/main/res/layout/aa.xml -->

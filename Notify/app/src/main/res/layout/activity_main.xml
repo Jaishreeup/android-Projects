@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@android:color/black"
+    android:layout_height="fill_parent">
+
+	<Button
+	    android:id="@+id/myButton"
+	    android:background="@android:color/white"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="111dp"
+	    android:text="Enter" />
+
+	<TextView
+	    android:id="@+id/textView1"
+	    android:layout_marginTop="40dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:textColor="@android:color/white"
+	    android:layout_alignParentRight="true"
+	    android:text="        Welcome To Notifier App"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	<ProgressBar
+	    android:id="@+id/firstBar"
+	    style="?android:attr/progressBarStyleHorizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/myButton"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="58dp"
+	    android:visibility="gone" />
+
+	<TextView
+	    android:id="@+id/textView2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="50dp"
+	    android:text=""
+	    android:textAlignment="center"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:textColor="@android:color/white" />
+
+</RelativeLayout> 

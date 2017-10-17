@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+     android:background="@drawable/reb2"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/te"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:text="Notices You Got" />
+
+    <ExpandableListView
+        android:layout_marginTop="80sp"
+        android:id="@+id/list1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+    </ExpandableListView>
+
+</RelativeLayout>

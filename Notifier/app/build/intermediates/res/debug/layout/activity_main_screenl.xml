@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/c"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sync"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="sync"
+        android:clickable="true"/>
+    <Button
+            android:id="@+id/button1"
+            style="@style/button"
+            android:layout_width="284sp"
+            android:layout_marginLeft="15sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="90sp"
+            android:text="Notices"
+            android:onClick="changescreen" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/button"
+            android:layout_width="284sp"
+            android:layout_marginRight="15sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="90sp"
+            android:text="Set Preferences" 
+            android:onClick="changescreen"/>
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/button"
+            android:layout_width="284sp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="52sp"
+            android:text="About Application"
+            android:onClick="changescreen"
+            />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/button"
+            android:layout_width="284sp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/button2"
+            android:layout_alignTop="@+id/button3"
+            android:text="About Developers"
+            android:onClick="changescreen"
+            />
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/JAISHREE%20UPRETI/AndroidStudioProjects/Notifier/app/src/main/res/layout/activity_main_screenl.xml -->

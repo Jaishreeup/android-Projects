@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jaishreeupreti.applock" >
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".section1"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:excludeFromRecents="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LockScreen"
+            android:excludeFromRecents="true"
+            android:label="applock"
+            android:noHistory="true" >
+        </activity>
+
+        <service
+            android:name=".appLockerService"
+            android:enabled="true"
+            android:exported="true"
+            android:label="service" >
+        </service>
+
+        <receiver
+            android:name=".BootReciever"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".pattern"
+            android:label="@string/title_activity_pattern" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".confirmPass"
+            android:label="@string/title_activity_confirm_pass" >
+        </activity>
+
+    </application>
+
+</manifest>

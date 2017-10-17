@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\JAISHREE UPRETI\AndroidStudioProjects\sports\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="C:\Users\JAISHREE UPRETI\AndroidStudioProjects\sports\app\build\intermediates\pre-dexed\debug\classes-1f425184bbc6e7e264479a1a03efda916a20fd5a.jar" />
+    </item>
+    <item
+        jar="C:\Users\JAISHREE UPRETI\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\JAISHREE UPRETI\AndroidStudioProjects\sports\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-47b97ea8de0edf95a8bac7886c0932b53e407548.jar" />
+    </item>
+    <item
+        jar="C:\Users\JAISHREE UPRETI\AndroidStudioProjects\sports\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\JAISHREE UPRETI\AndroidStudioProjects\sports\app\build\intermediates\pre-dexed\debug\classes-25f803123b166c8511eb5baf51de469cfbfa348f.jar" />
+    </item>
+    <item
+        jar="C:\Users\JAISHREE UPRETI\AndroidStudioProjects\sports\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\JAISHREE UPRETI\AndroidStudioProjects\sports\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-ea49f2e5622c273ff5a91ad2fa47f043762a1a2b.jar" />
+    </item>
+    <item
+        jar="C:\Users\JAISHREE UPRETI\AndroidStudioProjects\sports\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="C:\Users\JAISHREE UPRETI\AndroidStudioProjects\sports\app\build\intermediates\pre-dexed\debug\classes-aa80abdc5bbc34c5987a85bebc0a71a96e6e65b9.jar" />
+    </item>
+    <item
+        jar="C:\Users\JAISHREE UPRETI\AndroidStudioProjects\sports\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\JAISHREE UPRETI\AndroidStudioProjects\sports\app\build\intermediates\pre-dexed\debug\classes-a3ae3b4c8234830282f731799a3d07c3b2830c74.jar" />
+    </item>
+
+</items>

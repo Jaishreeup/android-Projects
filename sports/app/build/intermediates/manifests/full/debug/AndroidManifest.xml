@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sports"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.sports.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.sports.NewUser"
+            android:label="@string/title_activity_new_user" >
+        </activity>
+        <activity
+            android:name="com.example.sports.Login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.example.sports.Game"
+            android:label="@string/title_activity_game" >
+        </activity>
+        <activity
+            android:name="com.example.sports.Fpage"
+            android:label="@string/title_activity_fpage" >
+        </activity>
+        <activity
+            android:name="com.example.sports.Start"
+            android:label="@string/title_activity_start" >
+        </activity>
+        <activity
+            android:name="com.example.sports.Two"
+            android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+            android:name="com.example.sports.First"
+            android:label="@string/title_activity_first" >
+        </activity>
+        <activity
+            android:name="com.example.sports.CreateGroup"
+            android:label="@string/title_activity_create_group" >
+        </activity>
+        <activity
+            android:name="com.example.sports.Calender"
+            android:label="@string/title_activity_calender" >
+        </activity>
+        <activity
+            android:name="com.example.sports.JoinGroup"
+            android:label="@string/title_activity_join_group" >
+        </activity>
+        <activity
+            android:name="com.example.sports.MyActivity"
+            android:label="@string/title_activity_my" >
+        </activity>
+        <activity
+            android:name="com.example.sports.Info"
+            android:label="@string/title_activity_info" >
+        </activity>
+        <activity
+            android:name="com.example.sports.Filteer"
+            android:label="@string/title_activity_filteer" >
+        </activity>
+        <activity
+            android:name="android.support.v7.widget.TestActivity"
+            android:label="RecyclerViewTestActivity" />
+    </application>
+
+</manifest>

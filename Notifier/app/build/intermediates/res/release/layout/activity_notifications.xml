@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/reb2"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvcs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:background="@android:color/transparent"
+        />
+
+    <ListView
+        android:id="@+id/nlist"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true">
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="oops!! no notices!!"
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        />
+</RelativeLayout><!-- From: file:/C:/Users/JAISHREE%20UPRETI/AndroidStudioProjects/Notifier/app/src/main/res/layout/activity_notifications.xml -->

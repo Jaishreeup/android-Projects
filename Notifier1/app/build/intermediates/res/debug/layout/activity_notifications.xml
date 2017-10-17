@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ListView
+        android:id="@+id/nlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="oops!! no notifications!!"
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        android:layout_alignRight="@+id/nlist"
+        android:layout_alignEnd="@+id/nlist" />
+
+</RelativeLayout><!-- From: file:/C:/Users/JAISHREE%20UPRETI/AndroidStudioProjects/Notifier1/app/src/main/res/layout/activity_notifications.xml -->

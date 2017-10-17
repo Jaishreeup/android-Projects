@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:id="@+id/r">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/icon"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:layout_centerInParent="true"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="NOTIFIER"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/textView7"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/imageView"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:fontFamily="@string/abc_action_bar_home_description_format"
+        android:textColor="#ff78d07b"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Your handy notice board..."
+        android:id="@+id/textView8"
+        android:layout_below="@+id/imageView"
+        android:textColor="#ff78d07b"
+        android:textSize="25dp"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">call blocker</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint">choose a contact </string>
+    <string name="image">image</string>
+    <string name="block">Block</string>
+    <string name="blocklist">blocklist</string>
+    <string name="status">Blocking Service</string>
+    <string name="title_activity_next">nextActivity</string>
+    <string name="title_activity_blocklist">blocklist</string>
+</resources>

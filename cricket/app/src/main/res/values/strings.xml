@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">cricket</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_activity_info">info</string>
+    <string name="title_activity_form">form</string>
+    <string name="title_activity_filteer">filteer</string>
+</resources>
