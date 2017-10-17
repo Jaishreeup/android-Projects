@@ -1,48 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:background="@color/best"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/busid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:layout_marginLeft="22dp"
-        android:ems="10"
-        android:hint="BusId" >
-</EditText>
-
-    <EditText
-        android:id="@+id/routeid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:layout_marginLeft="22dp"
-        android:ems="10"
-        android:hint="routeId" >
-
-    <requestFocus />
-    </EditText>
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/busid"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="68dp"
-        android:text="Login" />
-
-    <EditText
-        android:id="@+id/cid"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/busid"
-        android:layout_marginTop="30dp"
-        android:ems="10"
-        android:hint="ConductorId" />
+        android:clickable="true"
+        android:id="@+id/ll"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="50sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/photo" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imageView1"
+            android:textColor="@android:color/white"
+            android:text="Witty Bus Tracking System" />
+
+        <EditText
+            android:id="@+id/busid"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@android:color/white"
+            android:textCursorDrawable="@drawable/color_change"
+            android:ems="10"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/textView1"
+            android:hint="Bus Id" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/cid"
+            android:layout_marginTop="50dp"
+            android:text="Login" />
+
+    </LinearLayout>
+</ScrollView>

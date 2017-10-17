@@ -29,14 +29,12 @@ public class routeDB extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public long addRecord(String bid, String num_stops,String route) {
+    public long addRecord(String bid, String num_stops, String route) {
         deleteRecord(bid);
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        System.out.println("ccccccccc ");
-        System.out.println("ccccccccc ");
-        values.put("bid",bid);
-        values.put("num_stops",num_stops);
+        values.put("bid", bid);
+        values.put("num_stops", num_stops);
         values.put("route", route);
         long b = db.insert(table_name, null, values);
         db.close();
@@ -69,13 +67,13 @@ public class routeDB extends SQLiteOpenHelper {
     public String getRoute(String bid) {
         int i = 0;
         Cursor c;
-        String result="";
+        String result = "";
         SQLiteDatabase db = this.getReadableDatabase();
-            c = db.rawQuery("select route from table1 where  bid=?", new String[]{bid});
+        c = db.rawQuery("select route from table1 where  bid=?", new String[]{bid});
         try {
             if (c != null) {
                 c.moveToFirst();
-                    result= c.getString(0);
+                result = c.getString(0);
             }
         } catch (SQLiteException e) {
             e.printStackTrace();
@@ -84,20 +82,21 @@ public class routeDB extends SQLiteOpenHelper {
         db.close();
         return result;
     }
+
     public String getStops(String bid) {
         int i = 0;
         Cursor c;
-        String result="";
+        String result = "";
         SQLiteDatabase db = this.getReadableDatabase();
         c = db.rawQuery("select num_stops from table1 where  bid=?", new String[]{bid});
 
         try {
             if (c != null) {
-                System.out.println("lo yahan hu"+bid);
+                System.out.println("lo yahan hu" + bid);
                 c.moveToFirst();
-                    result= c.getString(0);
-                System.out.println("lo yahan hu"+c);
-                }
+                result = c.getString(0);
+                System.out.println("lo yahan hu" + c);
+            }
         } catch (SQLiteException e) {
             e.printStackTrace();
         }

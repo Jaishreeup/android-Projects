@@ -14,6 +14,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
+//import org.apache.http.entity.StringEntity;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONException;
@@ -23,10 +24,12 @@ import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import static mycontentprovider.example.com.conduct.functions.isConnected;
+
 public class sendData extends Service {
     static SharedPreferences sp;
-    Timer timer;
     static TimerTask t, temp;
+    Timer timer;
 
     public sendData() {
     }
@@ -38,22 +41,11 @@ public class sendData extends Service {
     }
 
     public void onCreate() {
-System.out.println("insiiiiiiiiii");
         sp = getSharedPreferences("conduct", Context.MODE_PRIVATE);
         timer = new Timer();
+        System.out.println("wwwwwwwwwwwwwwwwwww");
         t = new CheckRunningActivity(getApplicationContext());
-        System.out.println("ooooooooooooooooo");
-        timer.scheduleAtFixedRate(t,10 * 1000, 10 * 1000);
-
-    }
-
-    public boolean isConnected() {
-        ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Activity.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
-        if (networkInfo != null && networkInfo.isConnected())
-            return true;
-        else
-            return false;
+        timer.scheduleAtFixedRate(t, 10 * 1000, 10 * 1000);
     }
 
 
@@ -65,22 +57,23 @@ System.out.println("insiiiiiiiiii");
 
         public CheckRunningActivity(Context con) {
 
-            context = con;
+             context = con;
         }
 
         public void run() {
-            if (isConnected()) {
+            if (isConnected(getApplicationContext())) {
                 int val = sp.getInt("available", 60);
                 String bid = sp.getString("bid", "default");
+                System.out.println("ccccccccchhh" +val);
 
                 HttpClient httpclient = new DefaultHttpClient();
-                HttpPost httppost = new HttpPost("http://abesec.in/witty/getData.php");
+                HttpPost httppost = new HttpPost("http://wittybus.000webhostapp.com/getData.php");
                 JSONObject json = new JSONObject();
-                System.out.println("hereeeeeeee");
                 try {
                     // Add your data
                     json.put("available", val);
                     json.put("bid", bid);
+                    json.put("fr", sp.getString("fr", "U"));
                     StringEntity se = new StringEntity(json.toString());
                     httppost.setEntity(se);
                     // Execute HTTP Post Request
@@ -88,11 +81,9 @@ System.out.println("insiiiiiiiiii");
                     // 7. Set some headers to inform server about the type of the content
                     httppost.setHeader("Accept", "application/json");
                     httppost.setHeader("Content-type", "application/json");
-                    System.out.println("yooooo");
 
                     // 8. Execute POST request to the given URL
                     HttpResponse httpResponse = httpclient.execute(httppost);
-                    System.out.println("llllleeeee");
 
                 } catch (ClientProtocolException e) {
                     e.printStackTrace();

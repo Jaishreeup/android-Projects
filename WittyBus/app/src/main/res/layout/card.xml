@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll"
+    android:padding="10dp">
+ <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv"
+     card_view:cardUseCompatPadding="true"
+     card_view:cardElevation="4dp"
+     card_view:cardBackgroundColor="@android:color/white"
+     card_view:contentPadding="10dp"
+     card_view:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rno"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentTop="true"
+                android:textSize="20sp"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/src"
+                android:textSize="20sp"
+                android:layout_marginRight="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/rno" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/to"
+                android:text="to"
+                android:layout_toRightOf="@+id/rno"
+                android:layout_below="@+id/src"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="5dp" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dest"
+                android:layout_below="@+id/to"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/rno"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
